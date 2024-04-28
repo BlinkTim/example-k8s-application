@@ -23,7 +23,7 @@ spec:
     spec:
       containers:
         - name: example-frontend
-          image: docknicki/example-frontend:1.0.6
+          image: blinktim/example-frontend:v1.0.1
           imagePullPolicy: IfNotPresent
           resources:
             requests:

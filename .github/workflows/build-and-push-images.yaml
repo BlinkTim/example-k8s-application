@@ -11,10 +11,10 @@ jobs:
       matrix:
         include:
           - dockerfile: ./backend/Dockerfile
-            image: "docknicki/example-backend"
+            image: "blinktim/example-backend"
             context: ./backend
           - dockerfile: ./frontend/Dockerfile
-            image: "docknicki/example-frontend"
+            image: "blinktim/example-frontend"
             context: ./frontend
     steps:
       - name: Checkout code
