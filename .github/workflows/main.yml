@@ -46,7 +46,7 @@ jobs:
           aws --version
           cd frontend/dist/frontend/browser
           ls -la
-          aws s3 cp . s3://$AWS_S3_BUCKET/ --recursive --acl public-read
+          aws s3 cp . s3://$AWS_S3_BUCKET/ --recursive
 
   ansible-to-ec2:
     needs: upload_to_s3
