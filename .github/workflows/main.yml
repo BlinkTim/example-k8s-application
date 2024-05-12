@@ -65,7 +65,7 @@ jobs:
       - name: Run Ansible playbook
         run: |
           ansible --version
-          ansible-playbook -i hosts.ini deploy-backend.yml --private-key=./temp_key.pem
+          ansible-playbook -i hosts.ini backend_deployment.yaml --private-key=./temp_key.pem
           rm -f ./temp_key.pem
 
   start-backend:
